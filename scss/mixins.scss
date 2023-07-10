@@ -58,9 +58,12 @@
   font-size: $fontSize;
   font-weight: $fontWeight;
   transition: all 0.3s ease-in-out;
-  &:hover,
-  :focus {
-    color: $greyColor;
+  text-transform: uppercase;
+  &:hover {
+    color: #b6afaf;
+  }
+  &:focus {
+    color: #b6afaf;
   }
 }
 // mixins/

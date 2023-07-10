@@ -1,0 +1,66 @@
+// import variables
+@import "./variables.scss";
+// import variables/
+
+// mixins
+@mixin headings {
+  font-family: Yeseva One;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@mixin paragraphs {
+  font-family: Comfortaa;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@mixin buttonBuy {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  background-color: $yellowColor;
+  padding: 18px 54px;
+  line-height: normal;
+  transition: all 0.3s ease-in-out;
+  &:hover,
+  :focus {
+    color: fff;
+    background-color: $beigeColor;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+@mixin buttonBuyCourse {
+  color: $blackColor;
+  background-color: $yellowColor;
+  transition: all 0.3s ease-in-out;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 13px 16px;
+  &:hover,
+  :focus {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #fff;
+  }
+}
+@mixin headerLinks($color, $fontSize, $fontWeight) {
+  color: $color;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  transition: all 0.3s ease-in-out;
+  &:hover,
+  :focus {
+    color: $greyColor;
+  }
+}
+// mixins/

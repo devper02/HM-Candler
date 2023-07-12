@@ -16,4 +16,19 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+
+.btnMenu {
+  display: none;
+  width: 30px;
+  height: 25px;
+  background-color: transparent;
+  padding: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  & span {
+    height: 1px;
+    background-color: $brownColor;
+    width: 100%;
+  }
+}
 // base/

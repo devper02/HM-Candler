@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/media.css" />
     <!-- import css/ -->
+    <!-- import icon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/web-icon/favicon.svg"
+      type="image/x-icon"
+    />
+    <!-- import icon/ -->
   </head>
   <body>
     <!--! content -->
@@ -19,8 +26,15 @@
           <a class="header__logo" href=""
             ><img src="./assets/img/header/logo.png" alt=""
           /></a>
-          <nav class="menu">
-            <ul class="menu__list">
+          <nav class="menu header__menu">
+            <button class="btnMenu">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <ul class="menu__list header__menu-list">
               <li class="menu__list-item"><a href="">Про нас</a></li>
               <li class="menu__list-item"><a href="">Каталог</a></li>
               <li class="menu__list-item"><a href="">Команда</a></li>
@@ -34,6 +48,27 @@
       </div>
     </header>
     <!-- header/ -->
+    <!--! main -->
+    <main class="main">
+      <!-- section top -->
+      <section class="top">
+        <div class="container top__inner">
+          <div class="top__content">
+            <h3 class="top__title">Створіть атмосферу затишку та гармонії!</h3>
+            <p class="top__text">
+              Створіть особливу атмосферу у своєму домі з нашою екологічно
+              чистою та якісною продукцією зі 100% натуральної соєвого воску.
+            </p>
+            <button class="top-buy">Купити</button>
+          </div>
+          <picture class="top__img">
+            <img class="top__img-l" src="./assets/img/section-main/section-top/top-l.png" alt="" />
+          </picture>
+        </div>
+      </section>
+      <!-- section top/ -->
+    </main>
+    <!--! main/ -->
     <!-- footer -->
     <footer class="footer">
       <div class="container">
@@ -41,8 +76,8 @@
           <a class="header__logo" href=""
             ><img src="./assets/img/footer/logo/logo.png" alt=""
           /></a>
-          <nav class="menu">
-            <ul class="menu__list">
+          <nav class="menu footer__menu">
+            <ul class="menu__list footer__menu-list">
               <li class="menu__list-item"><a href="">Про нас</a></li>
               <li class="menu__list-item"><a href="">Каталог</a></li>
               <li class="menu__list-item"><a href="">Команда</a></li>
@@ -51,7 +86,7 @@
               <li class="menu__list-item"><a href="">Контакти</a></li>
             </ul>
           </nav>
-          <div class="footer__contatcts">
+          <div class="footer__contacts">
             <a class="footer__phone" href="tel:+4565789876">+45 65 78 98 76</a>
             <a href="mailto:candelsCandels@gmail.com" class="email"
               >candelsCandels@gmail.com</a

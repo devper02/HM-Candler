@@ -1,0 +1,158 @@
+// import variables
+@import "./variables.scss";
+// import variables/
+// media
+// 1000px
+@media (max-width: 1000px) {
+  .container {
+    padding: 0 20px;
+  }
+  .top__content {
+    width: 333px;
+  }
+  .top__img-l {
+    width: 655px;
+  }
+}
+// 1000px/
+// 900px
+@media (max-width: 900px) {
+  .footer__inner {
+    flex-wrap: wrap;
+  }
+  .footer__contacts {
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    & .footer__social {
+      justify-content: center;
+    }
+  }
+}
+// 900px/
+// 768px
+@media (max-width: 768px) {
+  .menu__list {
+    & a {
+      font-size: 10px;
+    }
+  }
+  .phone {
+    font-size: 10px;
+    &::before {
+      background-size: cover;
+      width: 14px;
+      height: 14px;
+      left: -15px;
+      top: -20%;
+    }
+  }
+  .footer__contacts {
+    font-size: 10px;
+    & {
+      .footer__phone {
+        font-size: 10px;
+      }
+    }
+    & .footer__phone {
+      margin-bottom: 10px;
+    }
+    & .email {
+      margin-bottom: 10px;
+    }
+  }
+  .footer__social {
+    & img {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .container {
+    max-width: 640px;
+  }
+}
+// 768px/
+// 640px
+@media (max-width: 640px) {
+  .container {
+    padding: 0 20px;
+  }
+  .header__menu {
+    order: 1;
+  }
+  .header__menu-list {
+    position: absolute;
+    top: -200%;
+    left: 0;
+    width: 162px;
+    background-color: $brownColor;
+    flex-direction: column;
+    padding: 25px 46px;
+    transform: translateY(-110%);
+    z-index: 5;
+    transition: transform 0.5s ease;
+    &:hover {
+      background-color: #b6afaf;
+    }
+    & a {
+      color: $pinkColor;
+    }
+    & li {
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .menu__open {
+    top: 0;
+    transform: translateY(0%);
+  }
+  .btnMenu {
+    display: flex;
+  }
+  .footer {
+    & a {
+      font-size: 10px;
+    }
+    & .footer__phone {
+      font-size: 10px;
+    }
+  }
+}
+// 640px/
+// 507px
+@media (max-width: 507px) {
+  .footer {
+    padding: 50px 0;
+    & a {
+      font-size: 14px;
+    }
+  }
+  .footer__inner {
+    flex-direction: column;
+    & .footer__menu-list {
+      flex-direction: column;
+      & li {
+        margin-right: 0;
+        margin-bottom: 22px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .footer__phone {
+      font-size: 14px;
+    }
+  }
+  .footer__menu {
+    padding: 50px 0;
+    text-align: center;
+  }
+}
+// 507px/
+// 500px
+@media (max-width: 500px) {
+}
+// 500px/
+// media/

@@ -60,7 +60,7 @@
   padding: 150px 0 281px;
 }
 .top__title {
-  width: 391px;
+  max-width: 391px;
   font-family: "Yeseva One", cursive;
   font-size: 30px;
   font-style: normal;
@@ -69,7 +69,7 @@
   margin-bottom: 15px;
 }
 .top__text {
-  width: 371px;
+  max-width: 371px;
   @include paragraphs;
   margin-bottom: 49px;
 }

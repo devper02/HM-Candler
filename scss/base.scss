@@ -3,6 +3,10 @@
 @import "./fonts.scss";
 // import variables, fonts/
 // base
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: $blackColor;
   font-family: "Comfortaa", cursive;

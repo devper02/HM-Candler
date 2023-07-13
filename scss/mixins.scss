@@ -26,8 +26,15 @@
   padding: 18px 54px;
   line-height: normal;
   transition: all 0.3s ease-in-out;
-  &:hover,
-  :focus {
+  &:hover {
+    color: fff;
+    background-color: $beigeColor;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  & :focus {
     color: fff;
     background-color: $beigeColor;
     font-size: 18px;

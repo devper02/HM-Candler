@@ -82,6 +82,67 @@
   left: 240px;
 }
 // section top/
+// section about
+.about {
+  background-color: $beige2Color;
+  padding: 50px 0;
+  color: #fff;
+}
+.about__inner {
+  display: flex;
+  align-items: center;
+}
+.about__content {
+  min-width: 370px;
+  & h2 {
+    @include headings;
+    margin-bottom: 22px;
+    max-width: 370px;
+  }
+  & p {
+    @include paragraphs;
+    max-width: 370px;
+    margin-bottom: 15px;
+    & :last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.about__list {
+  position: relative;
+  padding: 0 0 48px 110px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url(../assets/img/section-main/section-about/about-decor.png);
+    width: 22px;
+    height: 30px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 22px;
+    bottom: 7px;
+    background-color: $brownColor;
+    width: 1000%;
+    height: 1px;
+  }
+  & img {
+    margin-bottom: 10px;
+    width: 215px;
+  }
+  #middle-img {
+    width: 350px;
+    height: 355px;
+  }
+}
+// section about/
 //! main/
 
 // footer

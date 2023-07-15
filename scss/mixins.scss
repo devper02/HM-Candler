@@ -29,7 +29,7 @@
   &:hover {
     color: fff;
     background-color: $beigeColor;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -37,7 +37,7 @@
   & :focus {
     color: fff;
     background-color: $beigeColor;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -73,6 +73,26 @@
   }
   &:focus {
     color: #b6afaf;
+  }
+}
+@mixin decorLine {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url(../assets/img/section-main/section-about/about-decor.png);
+    width: 22px;
+    height: 30px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 22px;
+    bottom: 7px;
+    background-color: $brownColor;
+    width: 1000%;
+    height: 1px;
   }
 }
 // mixins/

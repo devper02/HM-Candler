@@ -56,9 +56,8 @@
   &:hover,
   :focus {
     font-size: 14px;
-    font-style: normal;
+    background-color: $brownColor;
     font-weight: 600;
-    line-height: normal;
     color: #fff;
   }
 }

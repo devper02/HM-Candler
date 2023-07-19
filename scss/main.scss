@@ -200,6 +200,172 @@
   }
 }
 // section products/
+// section stages
+.stages {
+  padding-bottom: 160px;
+}
+.stages-row {
+  display: flex;
+}
+.stages__content {
+  width: 372px;
+  & h2 {
+    @include headings;
+    margin-bottom: 15px;
+  }
+  & p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+.stages-desc {
+  display: grid;
+  position: relative;
+  grid-template-columns: 370px 370px;
+  gap: 70px 30px;
+  padding: 0 0 72px 31px;
+  @include decorLine;
+}
+.stages__desc-block {
+  display: flex;
+  position: relative;
+  & p {
+    font-size: 14px;
+    width: 174px;
+  }
+  & #right-img {
+    margin-left: 38px;
+  }
+  & #left-img {
+    margin-right: 40px;
+  }
+  & .stage__absolute-number-left {
+    position: absolute;
+    color: $beigeColor;
+    font-family: "Yeseva One", cursive;
+    font-size: 30px;
+    font-weight: 400;
+    left: 0;
+    bottom: 0;
+  }
+  & .stage__absolute-number-right {
+    position: absolute;
+    color: $beigeColor;
+    font-family: "Yeseva One", cursive;
+    font-size: 30px;
+    font-weight: 400;
+    right: 0;
+    bottom: 0;
+  }
+}
+// section stages/
+// section buy-course
+.buy__course-row {
+  display: flex;
+  padding-bottom: 160px;
+}
+.buy__course-content {
+  width: 369px;
+  margin-right: 10px;
+  & h2 {
+    margin-bottom: 15px;
+    @include headings;
+  }
+  & p {
+    @include paragraphs;
+  }
+}
+.buy__course-blocks {
+  display: flex;
+  gap: 0 126px;
+  position: relative;
+  padding: 0 0 79px 63px;
+  @include decorLine;
+}
+.buy__course-block {
+  text-align: center;
+  width: 268px;
+  & img {
+    position: relative;
+    width: 268px;
+    height: 366px;
+    margin-bottom: 28px;
+  }
+  #title-1 {
+    background-color: $beigeColor;
+    position: absolute;
+    top: 166px;
+    left: 63px;
+    padding: 15px;
+    color: #fff;
+    font-family: "Yeseva One", cursive;
+    font-size: 11px;
+  }
+  #title-2 {
+    background-color: $beigeColor;
+    position: absolute;
+    top: 166px;
+    right: 77px;
+    padding: 15px 38px 15px 10px;
+    color: #fff;
+    font-family: "Yeseva One", cursive;
+    font-size: 11px;
+  }
+  #time-1 {
+    background-color: $beigeColor;
+    position: absolute;
+    font-family: "Yeseva One", cursive;
+    padding: 8px 16px 8px 10px;
+    left: 63px;
+    top: 224px;
+    font-size: 11px;
+    color: #fff;
+  }
+  #time-2 {
+    background-color: $beigeColor;
+    position: absolute;
+    font-family: "Yeseva One", cursive;
+    padding: 8px 16px 8px 10px;
+    top: 224px;
+    right: 137px;
+    font-size: 11px;
+    color: #fff;
+  }
+  #price-1 {
+    background-color: $beigeColor;
+    position: absolute;
+    font-family: "Yeseva One", cursive;
+    padding: 19px 19px 19px 10px;
+    left: 262px;
+    top: 329px;
+    font-size: 11px;
+    color: #fff;
+  }
+  #price-2 {
+    background-color: $beigeColor;
+    position: absolute;
+    font-family: "Yeseva One", cursive;
+    padding: 19px 19px 19px 10px;
+    right: -14px;
+    top: 329px;
+    font-size: 11px;
+    color: #fff;
+  }
+  & h4 {
+    font-family: "Yeseva One", cursive;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  & p {
+    margin-bottom: 23px;
+    @include paragraphs;
+  }
+  & button {
+    @include buttonBuyCourse;
+  }
+}
+// section buy-course/
 //! main/
 
 // footer

@@ -6,6 +6,7 @@
     <title>HM-Candler</title>
     <!-- import css -->
     <link rel="stylesheet" href="./css/reset.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/media.css" />
     <!-- import css/ -->
@@ -41,12 +42,14 @@
               <span></span>
             </button>
             <ul class="menu__list header__menu-list">
-              <li class="menu__list-item"><a href="">Про нас</a></li>
-              <li class="menu__list-item"><a href="">Каталог</a></li>
-              <li class="menu__list-item"><a href="">Команда</a></li>
-              <li class="menu__list-item"><a href="">Відгуки</a></li>
-              <li class="menu__list-item"><a href="">Курси</a></li>
-              <li class="menu__list-item"><a href="">Контакти</a></li>
+              <li class="menu__list-item"><a href="#about">Про нас</a></li>
+              <li class="menu__list-item"><a href="#products">Каталог</a></li>
+              <li class="menu__list-item">
+                <a href="#our-teachers">Команда</a>
+              </li>
+              <li class="menu__list-item"><a href="#feedback">Відгуки</a></li>
+              <li class="menu__list-item"><a href="#certificates">Курси</a></li>
+              <li class="menu__list-item"><a href="#contact">Контакти</a></li>
             </ul>
           </nav>
           <a class="phone" href="tel:+4565789876">+45 65 78 98 76</a>
@@ -57,7 +60,7 @@
     <!--! main -->
     <main class="main">
       <!-- section top -->
-      <section class="top">
+      <section class="top" id="top">
         <div class="container top__inner">
           <div class="top__content">
             <h3 class="top__title">Створіть атмосферу затишку та гармонії!</h3>
@@ -89,9 +92,9 @@
       </section>
       <!-- section top/ -->
       <!-- section about -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="container about__inner">
-          <div class="about__content">
+          <div class="about__content" data-aos="fade-right">
             <h2>Про нас</h2>
             <p>
               Богдан творець бренду який завжди зацікавлений у виготовленні
@@ -104,7 +107,7 @@
               і цей вид воску є екологічно чистим та безпечним для здоров'я.
             </p>
           </div>
-          <ul class="about__list">
+          <ul class="about__list" data-aos="fade-left">
             <li>
               <img
                 id="first-img"
@@ -134,9 +137,9 @@
       </section>
       <!-- section about/ -->
       <!-- section products -->
-      <section class="products">
+      <section class="products" id="products">
         <div class="container products__inner">
-          <div class="products__content">
+          <div class="products__content" data-aos="fade-right">
             <h2>Наші товари</h2>
             <p>
               Ми використовуємо тільки найкращі якісні матеріали: соєвий віск,
@@ -145,7 +148,7 @@
               створюючи незабутню атмосферу у вашому домі.
             </p>
           </div>
-          <div class="products-desc">
+          <div class="products-desc" data-aos="fade-left">
             <div class="products__desc-block">
               <img
                 src="./assets/img/section-main/section-producs/product-1.png"
@@ -203,17 +206,17 @@
       </section>
       <!-- section products/ -->
       <!-- section stages -->
-      <section class="stages">
+      <section class="stages" id="stages">
         <div class="container">
           <div class="stages-row">
-            <div class="stages__content">
+            <div class="stages__content" data-aos="fade-right">
               <h2>Етапи створення свічок</h2>
               <p>
                 Створення свічки із соєвого воску може складатися з наступних
                 етапів:
               </p>
             </div>
-            <div class="stages-desc">
+            <div class="stages-desc" data-aos="fade-left">
               <div class="stages__desc-block">
                 <p>
                   Підготовка матеріалів: дрібні фрагменти соєвого воску, фітіль
@@ -345,10 +348,10 @@
       </section>
       <!--/ section stages -->
       <!-- secion buy-course -->
-      <secion class="buy-course">
+      <secion class="buy-course" id="buy-course">
         <div class="container">
           <div class="buy__course-row">
-            <div class="buy__course-content">
+            <div class="buy__course-content" data-aos="fade-right">
               <h2>Наші курси</h2>
               <p>
                 Наші курси дозволяють зробити перший крок в новій кар'єрі або
@@ -357,7 +360,11 @@
               </p>
             </div>
             <div class="buy__course-blocks">
-              <div class="buy__course-block first-block">
+              <div
+                class="buy__course-block first-block"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
                 <img
                   src="./assets/img/section-main/section-buy-course/01.png"
                   alt=""
@@ -371,7 +378,12 @@
                 </p>
                 <button type="button">Купити курс</button>
               </div>
-              <div class="buy__course-block">
+              <div
+                class="buy__course-block"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              >
                 <img
                   src="./assets/img/section-main/section-buy-course/02.png"
                   alt=""
@@ -392,10 +404,10 @@
       </secion>
       <!-- secion buy-course/ -->
       <!-- section ourTeachers -->
-      <section class="ourTeachers">
+      <section class="ourTeachers" id="our-teachers">
         <div class="container">
           <div class="ourTeachers-row">
-            <div class="ourTeachers-content">
+            <div class="ourTeachers-content" data-aos="fade-right">
               <h2>Наші викладачі</h2>
               <p>
                 Ці люди працюють разом, щоб створювати курси для вас, які
@@ -403,7 +415,12 @@
               </p>
             </div>
             <div class="ourTeachers-blocks">
-              <div class="ourTeachers-block">
+              <div
+                class="ourTeachers-block"
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              >
                 <img
                   src="./assets/img/section-main/section-ourTeachers/01.png"
                   alt=""
@@ -413,7 +430,12 @@
                   <p>Має досвід викладання і роботи 4 роки</p>
                 </div>
               </div>
-              <div class="ourTeachers-block">
+              <div
+                class="ourTeachers-block"
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              >
                 <img
                   src="./assets/img/section-main/section-ourTeachers/02.png"
                   alt=""
@@ -423,7 +445,12 @@
                   <p>Має досвід викладання і роботи 6 років</p>
                 </div>
               </div>
-              <div class="ourTeachers-block">
+              <div
+                class="ourTeachers-block"
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              >
                 <img
                   src="./assets/img/section-main/section-ourTeachers/03.png"
                   alt=""
@@ -433,7 +460,12 @@
                   <p>Навчає сфері дизайну та декорування</p>
                 </div>
               </div>
-              <div class="ourTeachers-block">
+              <div
+                class="ourTeachers-block"
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              >
                 <img
                   src="./assets/img/section-main/section-ourTeachers/04.png"
                   alt=""
@@ -449,10 +481,10 @@
       </section>
       <!-- section ourTeachers -->
       <!-- section feedback -->
-      <section class="feedback">
+      <section class="feedback" id="feedback">
         <div class="container">
           <div class="feedback-row">
-            <div class="feedback-desc">
+            <div class="feedback-desc" data-aos="zoom-out-right">
               <h2>Відгуки від клієнтів</h2>
               <p>
                 Наші покупці мають різний вік, статус, заняття і інтереси, але у
@@ -461,7 +493,11 @@
                 затишку та гармонії у їхньому домі.
               </p>
             </div>
-            <div class="feedback__content">
+            <div
+              class="feedback__content"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <div class="feedback__slider">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -609,17 +645,26 @@
       </section>
       <!-- section feedback/ -->
       <!-- section certificates -->
-      <section class="certificates">
+      <section class="certificates" id="certificates">
         <div class="container">
           <div class="certificates-row">
-            <div class="certificates__content">
+            <div
+              class="certificates__content"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <h2>Сертифікати якості</h2>
               <p>
                 Сертифікати забезпечують додаткову довіру та впевненість для
                 наших клієнтів.
               </p>
             </div>
-            <div class="certificates-desc">
+            <div
+              class="certificates-desc"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <div class="certificates-slider">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
@@ -658,7 +703,7 @@
       </section>
       <!-- section certificates/ -->
       <!-- section questions -->
-      <section class="questions">
+      <section class="questions" id="questions">
         <div class="container">
           <div class="questions__row">
             <div class="questions__row-info">
@@ -666,7 +711,11 @@
             </div>
             <div class="questions__row-questions">
               <div class="questions__row__questions-blocks">
-                <div class="questions__row__questions-block" id="acc-close">
+                <div
+                  class="questions__row__questions-block"
+                  id="acc-close"
+                  data-aos="fade-right"
+                >
                   <h4>Які запахи доступні для свічок?</h4>
                   <img
                     src="./assets/img/section-main/section-questions/row-icon/row-down.svg"
@@ -707,7 +756,11 @@
                     alt=""
                   />
                 </div>
-                <div class="questions__row__questions-block" id="acc-close">
+                <div
+                  class="questions__row__questions-block"
+                  id="acc-close"
+                  data-aos="fade-left"
+                >
                   <h4>Як довго горять свічки?</h4>
                   <img
                     src="./assets/img/section-main/section-questions/row-icon/row-down.svg"
@@ -748,7 +801,11 @@
                     alt=""
                   />
                 </div>
-                <div class="questions__row__questions-block" id="acc-close">
+                <div
+                  class="questions__row__questions-block"
+                  id="acc-close"
+                  data-aos="fade-right"
+                >
                   <h4>
                     Чи можна зробити замовлення на індивідуальний дизайн свічки?
                   </h4>
@@ -791,7 +848,11 @@
                     alt=""
                   />
                 </div>
-                <div class="questions__row__questions-block" id="acc-close">
+                <div
+                  class="questions__row__questions-block"
+                  id="acc-close"
+                  data-aos="fade-left"
+                >
                   <h4>Які є варіанти доставки?</h4>
                   <img
                     src="./assets/img/section-main/section-questions/row-icon/row-down.svg"
@@ -832,7 +893,11 @@
                     alt=""
                   />
                 </div>
-                <div class="questions__row__questions-block" id="acc-close">
+                <div
+                  class="questions__row__questions-block"
+                  id="acc-close"
+                  data-aos="fade-right"
+                >
                   <h4>Як оплачувати замовлення?</h4>
                   <img
                     src="./assets/img/section-main/section-questions/row-icon/row-down.svg"
@@ -873,7 +938,11 @@
                     alt=""
                   />
                 </div>
-                <div class="questions__row__questions-block" id="acc-close">
+                <div
+                  class="questions__row__questions-block"
+                  id="acc-close"
+                  data-aos="fade-left"
+                >
                   <h4>Як довго триває курс?</h4>
                   <img
                     src="./assets/img/section-main/section-questions/row-icon/row-down.svg"
@@ -914,7 +983,11 @@
                     alt=""
                   />
                 </div>
-                <div class="questions__row__questions-block" id="acc-close">
+                <div
+                  class="questions__row__questions-block"
+                  id="acc-close"
+                  data-aos="fade-right"
+                >
                   <h4>Яка ціна на курс?</h4>
                   <img
                     src="./assets/img/section-main/section-questions/row-icon/row-down.svg"
@@ -955,7 +1028,11 @@
                     alt=""
                   />
                 </div>
-                <div class="questions__row__questions-block" id="acc-close">
+                <div
+                  class="questions__row__questions-block"
+                  id="acc-close"
+                  data-aos="fade-left"
+                >
                   <h4>Чи є сертифікат на курс?</h4>
                   <img
                     src="./assets/img/section-main/section-questions/row-icon/row-down.svg"
@@ -1003,13 +1080,23 @@
       </section>
       <!-- section questions/ -->
       <!-- section add-product -->
-      <section class="add-product">
+      <section class="add-product" id="add-product">
         <div class="container">
           <div class="add__product-row">
-            <div class="add__product__row-text__block">
+            <div
+              class="add__product__row-text__block"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <h2>Купуйте більше, економте більше</h2>
             </div>
-            <div class="add__product__row-btn__block">
+            <div
+              class="add__product__row-btn__block"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
               <button>В каталог</button>
             </div>
           </div>
@@ -1017,10 +1104,10 @@
       </section>
       <!-- section add-product/ -->
       <!-- section contact -->
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="container">
           <div class="contact-row">
-            <div class="contact__row-login">
+            <div class="contact__row-login" data-aos="flip-right">
               <h2>Підпишись на наші акції</h2>
               <input type="text" placeholder="Імя" />
               <input type="email" placeholder="Е-mail" />
@@ -1028,7 +1115,11 @@
                 <button>Підписатись</button>
               </div>
             </div>
-            <div class="contact__row-img__block">
+            <div
+              class="contact__row-img__block"
+              data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
+            >
               <img
                 src="./assets/img/section-main/section-contact/content/content.png"
                 alt=""
@@ -1049,12 +1140,14 @@
           /></a>
           <nav class="menu footer__menu">
             <ul class="menu__list footer__menu-list">
-              <li class="menu__list-item"><a href="">Про нас</a></li>
-              <li class="menu__list-item"><a href="">Каталог</a></li>
-              <li class="menu__list-item"><a href="">Команда</a></li>
-              <li class="menu__list-item"><a href="">Відгуки</a></li>
-              <li class="menu__list-item"><a href="">Курси</a></li>
-              <li class="menu__list-item"><a href="">Контакти</a></li>
+              <li class="menu__list-item"><a href="#about">Про нас</a></li>
+              <li class="menu__list-item"><a href="#products">Каталог</a></li>
+              <li class="menu__list-item">
+                <a href="#our-teachers">Команда</a>
+              </li>
+              <li class="menu__list-item"><a href="#feedback">Відгуки</a></li>
+              <li class="menu__list-item"><a href="#certificates">Курси</a></li>
+              <li class="menu__list-item"><a href="#contact">Контакти</a></li>
             </ul>
           </nav>
           <div class="footer__contacts">
@@ -1092,6 +1185,7 @@
     <!--! content/ -->
     <!--! import js -->
     <noscript>Turn on JavaScript</noscript>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- import swiper.js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- import swiper.js/ -->

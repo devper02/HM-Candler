@@ -41,3 +41,6 @@ accardeonCloseNode.forEach(function (i) {
     }
   });
 });
+
+// aos
+AOS.init();
